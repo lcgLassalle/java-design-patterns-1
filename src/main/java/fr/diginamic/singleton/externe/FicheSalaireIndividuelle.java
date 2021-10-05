@@ -14,7 +14,7 @@ public class FicheSalaireIndividuelle {
 	
 	/** Constructeur
 	 * @param nomSalarie nom du salarié
-	 * @param prenom prénom du salarié
+	 * @param prenomSalarie prénom du salarié
 	 * @param salaire salaire
 	 */
 	public FicheSalaireIndividuelle(String nomSalarie, String prenomSalarie, double salaire) {

@@ -10,7 +10,7 @@ public class SystemeGestion {
 	 * @param bulletinSalaire
 	 * @param filePath path du fichier (ex: C:/Temp/monFichier.pdf) 
 	 */
-	public void genererPdf(BulletinSalaire bulletinSalaire, String filePath) {
+	public void genererPdf(ISalaire bulletinSalaire, String filePath) {
 		
 		BulletinSalairePdf pdf = new DocumentPdfBuilder(filePath)
 				                     .appendIdentite(bulletinSalaire.getNom(), bulletinSalaire.getPrenom())
