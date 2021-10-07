@@ -5,6 +5,7 @@ import java.util.List;
 public class DemoTri {
 
 	public static void main(String[] args) {
+/*
 		Tri tri = new Tri();
 		
 		System.out.println("Avec le Bubble Sort:");
@@ -24,7 +25,15 @@ public class DemoTri {
 		Integer[] array3 = {12, -5, 7, 0, 8, 4, -3, 9, 15};
 		tri.exec(3, array3);
 		List.of(array3).forEach(i -> System.out.print(i+" "));
-
+*/
+		//Refactoring
+		Integer[] array1 = {12, -5, 7, 0, 8, 4, -3, 9, 15};
+		//bubble tri
+		StrategyFactory.getTri(Type.bubble, array1);
+		//insertion tri
+		StrategyFactory.getTri(Type.insertion, array1);
+		//selection tri
+		StrategyFactory.getTri(Type.selection, array1);
 
 	}
 
